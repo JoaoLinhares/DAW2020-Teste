@@ -1,0 +1,1 @@
+mongoimport --db TesteDAW2020 --collection batismos --file batismos-fixed.json --jsonArray

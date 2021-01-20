@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr>
+    <meta>
+        <key>daw2020_teste_a86618</key>
+        <title> Teste Daw 2020</title>
+        <bdate>20 de Janeiro de 2021</bdate>
+        <edate>20 de Janeiro de 2021</edate>
+        <supervisor url="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</supervisor>
+    </meta>
+    <team>
+        <member id="a86618">
+            <name>João Carlos Garcia Linhares</name>
+            <email>a86618@alunos.uminho.pt</email>
+            <link url="https://github.com/JoaoLinhares/DAW2020-Teste">GitHub da Resolução do Teste</link>
+        </member>
+    </team>
+    <abstract>
+        <p>No execício 1 foi feita data cleasing, foi necessário corrigir as variáveis do ficheiro json pois faltava meter-las entre aspas com o replace do VScode e faltava também certas vírgulas em determinados sítios.</p>
+        <p>Com o auxilio do programa prog.js(basta correr node prog.js na diretoria do ex1) foram feitas algumas alterações como um novo campo _id com os valores de ref mas substituindo as '/' por '_', e novos campos como pai, mae, filho e ano para auxiliar no restante exercicio.</p>
+        <p>De seguida foi necessário fazer o import através do novo ficheiro batismos-fixed.json com as alterações referidas anteriormente. Foi utilizado o comando "mongoimport --db TesteDAW2020 --collection batismos --file batismos-fixed.json --jsonArray".</p>
+        <p>Para correr o API-server basta fazer cd api-server na diretoria do ex1, depois npm i para instalar as dependências e por fim npm start. O servidor vai estar à escuta na porta 8000, ao qual poderá ser feitos pedidos através do postman ou do browser. As respostas estão em json.</p>
+        <p>Para responder às perguntas do aquecimento foram criados pequenos programas, 1 para cada alínea. è necessário instalar a dependência do axios com npm i na pasta respostasFile na directoria do ex2.</p>
+        <p>Quantos processos (nível 3) e quais são (obtem uma lista em JSON; podes concatenar sublistas invocando várias queries), pertencentes à descendência da classe 900? 21</p>
+        <p>Quantas entidades estão catalogadas? 637</p>
+        <p>Quantos processos (classes de nível 3) se encontram na descendência de 900.10? 8</p>
+        <p>Quantos processos (classes de nível 3) estão relacionados com 900.10.505? 5</p>
+        <p>Por fim, na criação do app-server, o servidor faz os pedidos para obter o token. Para correr o APP-server basta fazer cd app-server na diretoria do ex1, depois npm i para instalar as dependências e por fim npm start. O servidor vai estar à escuta na porta 8001. </p>
+    </abstract>
+    <deliverables>
+        <link url="https://github.com/JoaoLinhares/DAW2020-Teste/blob/main/ex1"><b>Resolução exercicio 1</b></link>
+        <link url="https://github.com/JoaoLinhares/DAW2020-Teste/blob/main/ex2"><b>Resolução exercicio 2</b></link>
+    </deliverables>
+</pr>
